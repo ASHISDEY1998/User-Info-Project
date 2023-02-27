@@ -9,15 +9,19 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
       git clone https://github.com/ASHISDEY1998/User-Info-Project.git
 
 2.Then go to the project folder by below command
+
       cd User-Info-Project
       
 3.Then try to install all dependancy by below command
+
       npm install
       
 4.Then try to runthe project by below command
+
       ng serve
       
 5.Then after successfull compilation you can see a command like this
+
       ** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
       
 6.then go to your brouser and type http://localhost:4200/ OR if in your case local host may change so go to the given port number OR press control and clock on the port    link
