@@ -1,0 +1,61 @@
+<div class="row">
+    <div class="col-md-12">
+        <h2 class="text-center my-3">User Infomation</h2>
+        <h4 class="my-3" *ngIf="usersData.length === 0 && isloading == false && error === null"> No Data
+            Available !</h4>
+    </div>
+    <div class="col-md-12" *ngIf="usersData.length > 0 && isloading == false">
+        <div class="card my-2" *ngFor="let user of usersData">
+            <h5 class="card-header">{{user.name}}</h5>
+            <div class="card-body ">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h6>Personal Details</h6>
+                        <hr>
+                        <p>Username: {{user.username}}</p>
+                        <p>Email: {{user.email}}</p>
+                        <p>phone No: {{user.phone}}</p>
+                        <p>Website: {{user.website}}</p>
+
+                    </div>
+                    <div class="col-md-4">
+                        <h6>Address</h6>
+                        <hr>
+                        <p>
+                            {{user.address.suite}}, <br> {{user.address.street}}, <br>
+                            {{user.address.city}},
+                            {{user.address.zipcode}}
+                        </p>
+
+                        <p>Geo:
+                            <br>
+                            Lng: {{user.address.geo.lng}}
+                            <br>
+                            Lat: {{user.address.geo.lat}}
+                        </p>
+
+                    </div>
+                    <div class="col-md-4">
+                        <h6>Office Details</h6>
+                        <hr>
+                        <p>Company Name: {{user.company.name}}</p>
+                        <p>Catch Phrase: {{user.company.catchPhrase}}</p>
+                        <p>BS: {{user.company.bs}}</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h4 class="my-3 " *ngIf="isloading == true"> Loading... </h4>
+        <div class="alert my-3 alert-danger" *ngIf="error !== null">
+            <h4>An error occoured!</h4>
+            <p>{{error}}</p>
+            <button class="btn btn-danger" (click)=" handelError()">Okay</button>
+        </div>
+    </div>
+
+
+</div>

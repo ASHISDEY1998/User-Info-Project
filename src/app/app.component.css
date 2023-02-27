@@ -1,0 +1,20 @@
+.navbar {
+    background-color: #4472c4;
+}
+
+.nav-link,
+.navbar-text {
+    color: white !important;
+}
+
+.nav-link {
+    border-right: solid 1px white;
+}
+
+.nav-item:last-of-type a {
+    border-right: none;
+}
+
+.active {
+    font-weight: bold;
+}
