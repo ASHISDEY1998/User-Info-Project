@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
 
-## to run file localy
+## To run file localy
 1.Take Clone from the repository.
   please go to a folder and opening terminal then take clone by giving below command
 
